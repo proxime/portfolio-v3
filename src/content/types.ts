@@ -12,8 +12,12 @@ export type Competency = {
 
 export type StackItem = {
   name: string;
-  /** Simple Icons slug, or null when the brand has no logo there. */
+  /** Key of a vector logo in src/lib/tech-icons.ts, or null when there is none. */
   slug: string | null;
+  /** Small picture in /public/tech, for logos that are not a simple vector shape. */
+  image?: string;
+  /** Lucide stand-in for things that have no logo of their own (a protocol, a small library). */
+  icon?: IconName;
 };
 
 export type StackGroup = {

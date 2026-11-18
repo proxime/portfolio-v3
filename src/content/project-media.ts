@@ -44,6 +44,15 @@ export const projectMedia = {
     // Separate instance with sample data; the real one stays private.
     demoUrl: "https://korepetycje-demo.vercel.app",
   },
+  "7ab": {
+    status: "live",
+    images: [
+      "/projects/7ab.jpg",
+      "/projects/7ab-uslugi.jpg",
+      "/projects/7ab-realizacje.jpg",
+    ],
+    demoUrl: "https://www.7ab.eu",
+  },
   "kotor-remix": {
     status: "wip",
     images: [

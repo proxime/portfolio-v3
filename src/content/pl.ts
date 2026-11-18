@@ -4,7 +4,7 @@ import type { Content } from "./types";
 
 export const pl: Content = {
   meta: {
-    title: "Norbert Kułak — Full-stack Developer",
+    title: "Norbert Kułak - Full-stack Developer",
     description:
       "Full-stack developer z ponad sześcioletnim doświadczeniem komercyjnym. React, Next.js, TypeScript, NestJS i GraphQL.",
   },
@@ -38,7 +38,7 @@ export const pl: Content = {
     yearsNote: "komercyjnej pracy nad aplikacjami webowymi",
     stats: [
       { value: "5", label: "projekty komercyjne" },
-      { value: "7", label: "projekty prywatne" },
+      { value: "8", label: "projekty prywatne" },
     ],
     competenciesKicker: "W czym jestem dobry",
     competencies: [
@@ -90,7 +90,7 @@ export const pl: Content = {
     heading: "Doświadczenie Komercyjne",
     items: [
       {
-        period: "08.2025 — teraz",
+        period: "08.2025 - teraz",
         title: "Platforma AI roleplay",
         employer: "Dev and Deliver",
         role: "Full-stack Developer",
@@ -114,7 +114,7 @@ export const pl: Content = {
         ],
       },
       {
-        period: "03.2026 — teraz",
+        period: "03.2026 - teraz",
         title: "Marketplace do rezerwacji barmanów",
         employer: "Dev and Deliver",
         role: "Full-stack Developer",
@@ -136,7 +136,7 @@ export const pl: Content = {
         ],
       },
       {
-        period: "10.2026 — 11.2026",
+        period: "10.2026 - 11.2026",
         title: "Strona firmowa biura inżynierskiego",
         employer: "Dev and Deliver",
         role: "Full-stack Developer",
@@ -157,7 +157,7 @@ export const pl: Content = {
         ],
       },
       {
-        period: "11.2021 — 11.2025",
+        period: "11.2021 - 11.2025",
         title: "Platforma ESG i compliance",
         employer: "Dev and Deliver",
         role: "Frontend Developer",
@@ -180,7 +180,7 @@ export const pl: Content = {
         ],
       },
       {
-        period: "02.2021 — 10.2021",
+        period: "02.2021 - 10.2021",
         title: "Platforma edukacyjna dla dzieci",
         employer: "Dev and Deliver",
         role: "Frontend Developer",
@@ -191,10 +191,18 @@ export const pl: Content = {
           "Konta nauczycieli i szkół: import listy uczniów z pliku CSV, klasy i edycja uczniów.",
           "Panel administracyjny: uniwersalna tabela oraz zarządzanie użytkownikami, kursami, materiałami wideo, szkołami i powiadomieniami.",
         ],
-        tags: ["React", "TypeScript", "Apollo Client", "GraphQL", "Redux", "styled-components", "React Hook Form"],
+        tags: [
+          "React",
+          "TypeScript",
+          "Apollo Client",
+          "GraphQL",
+          "Redux",
+          "styled-components",
+          "React Hook Form",
+        ],
       },
       {
-        period: "06.2020 — 01.2021",
+        period: "06.2020 - 01.2021",
         title: "Aplikacje webowe i blockchain",
         employer: "Nextrope",
         role: "Junior Full-stack Developer",
@@ -240,22 +248,6 @@ export const pl: Content = {
         tags: ["Next.js", "TypeScript", "Supabase", "TipTap", "Zustand"],
       },
       {
-        id: "budapp",
-        ...projectMedia["budapp"],
-        title: "BudApp",
-        desc: "Aplikacja dla brygadzistów i małych ekip budowlanych: zlecenia, wyceny wysyłane klientowi linkiem, zdjęcia z realizacji i zarządzanie pracownikami.",
-        details: [
-          "Aplikacja webowa projektowana pod telefon w terenie. Brygadzista prowadzi w niej zlecenia i wyceny, pracownicy widzą tylko przypisane im zlecenia, a klient akceptuje wycenę przez link, bez zakładania konta.",
-        ],
-        highlights: [
-          "Trzy role: właściciel firmy, pracownik dołączający z zaproszenia i klient z dostępem przez unikalny link.",
-          "Kreator wycen z biblioteką pozycji, kalkulatorami i wersją do druku.",
-          "Zlecenia ze statusami oraz zdjęciami przed, w trakcie i po realizacji.",
-          "Izolacja danych między firmami oparta na Row Level Security w Supabase.",
-        ],
-        tags: ["Next.js", "TypeScript", "Supabase", "shadcn/ui", "dnd-kit"],
-      },
-      {
         id: "chess-outplay",
         ...projectMedia["chess-outplay"],
         title: "Chess Outplay",
@@ -288,6 +280,38 @@ export const pl: Content = {
           "Cała komunikacja z bazą odbywa się po stronie serwera, więc klucze nie trafiają do przeglądarki.",
         ],
         tags: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Web Push"],
+      },
+      {
+        id: "7ab",
+        ...projectMedia["7ab"],
+        title: "7AB",
+        desc: "Strona firmowa doradztwa biznesowego z blogiem i aktualnościami. Treścią zarządza właściciel w panelu Sanity.",
+        details: [
+          "Strona firmowa z podstronami usług, realizacji, aktualności i bloga. Panel do zarządzania treścią jest osadzony w tej samej aplikacji, a zmiany pojawiają się na stronie zaraz po publikacji.",
+        ],
+        highlights: [
+          "Cała strona w Next.js, z podstronami generowanymi z treści w CMS.",
+          "Sanity CMS ze studiem w tej samej aplikacji i odświeżaniem treści po publikacji.",
+          "Formularz kontaktowy z wysyłką e-mail i ochroną reCAPTCHA.",
+          "Animacje interfejsu w Framer Motion.",
+        ],
+        tags: ["Next.js", "TypeScript", "Sanity", "styled-components", "Framer Motion"],
+      },
+      {
+        id: "budapp",
+        ...projectMedia["budapp"],
+        title: "BudApp",
+        desc: "Aplikacja dla brygadzistów i małych ekip budowlanych: zlecenia, wyceny wysyłane klientowi linkiem, zdjęcia z realizacji i zarządzanie pracownikami.",
+        details: [
+          "Aplikacja webowa projektowana pod telefon w terenie. Brygadzista prowadzi w niej zlecenia i wyceny, pracownicy widzą tylko przypisane im zlecenia, a klient akceptuje wycenę przez link, bez zakładania konta.",
+        ],
+        highlights: [
+          "Trzy role: właściciel firmy, pracownik dołączający z zaproszenia i klient z dostępem przez unikalny link.",
+          "Kreator wycen z biblioteką pozycji, kalkulatorami i wersją do druku.",
+          "Zlecenia ze statusami oraz zdjęciami przed, w trakcie i po realizacji.",
+          "Izolacja danych między firmami oparta na Row Level Security w Supabase.",
+        ],
+        tags: ["Next.js", "TypeScript", "Supabase", "shadcn/ui", "dnd-kit"],
       },
       {
         id: "kotor-remix",
@@ -337,7 +361,7 @@ export const pl: Content = {
   },
   contact: {
     heading: "Kontakt",
-    lead: "Szukasz developera do zespołu albo masz konkretny projekt? Napisz — zwykle odpowiadam w ciągu dnia lub dwóch.",
+    lead: "Szukasz developera do zespołu albo masz konkretny projekt? Napisz - zwykle odpowiadam w ciągu dnia lub dwóch.",
     note: "Najchętniej rozmawiam o projektach w ekosystemie React i Next.js, po polsku lub po angielsku.",
     form: {
       name: "Imię i nazwisko",
@@ -345,7 +369,7 @@ export const pl: Content = {
       message: "Wiadomość",
       send: "Wyślij",
       sending: "Wysyłanie…",
-      sent: "Wysłano — dzięki!",
+      sent: "Wysłano - dzięki!",
       namePh: "Jan Kowalski",
       emailPh: "jan@firma.pl",
       messagePh: "W czym mogę pomóc?",

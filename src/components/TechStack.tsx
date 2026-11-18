@@ -1,21 +1,38 @@
+import Image from "next/image";
 import type { Content, StackItem } from "@/content/types";
 import { getTechIcon, monogram } from "@/lib/tech-icons";
+import { Icon } from "./Icon";
 import { SectionHead, sectionClass } from "./SectionHead";
 
+/** Vector logo first, then a picture, then a Lucide stand-in, and a monogram as the last resort. */
 function TechIcon({ item }: { item: StackItem }) {
-  const icon = getTechIcon(item.slug);
-  if (!icon) {
+  const logo = getTechIcon(item.slug);
+  if (logo) {
     return (
-      <span className="tech-ico tech-ico-mono" aria-hidden="true">
-        {monogram(item.name)}
+      <span className="tech-ico" aria-hidden="true">
+        <svg viewBox="0 0 24 24" className="tech-logo" fill={logo.color}>
+          <path d={logo.path} fillRule={logo.evenOdd ? "evenodd" : undefined} />
+        </svg>
+      </span>
+    );
+  }
+  if (item.image) {
+    return (
+      <span className="tech-ico" aria-hidden="true">
+        <Image src={item.image} alt="" width={20} height={20} className="h-5 w-5" />
+      </span>
+    );
+  }
+  if (item.icon) {
+    return (
+      <span className="tech-ico text-violet-300" aria-hidden="true">
+        <Icon name={item.icon} className="h-[18px] w-[18px]" />
       </span>
     );
   }
   return (
-    <span className="tech-ico" aria-hidden="true">
-      <svg viewBox="0 0 24 24" className="tech-logo" fill={icon.color}>
-        <path d={icon.path} />
-      </svg>
+    <span className="tech-ico tech-ico-mono" aria-hidden="true">
+      {monogram(item.name)}
     </span>
   );
 }

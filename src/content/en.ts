@@ -4,7 +4,7 @@ import type { Content } from "./types";
 
 export const en: Content = {
   meta: {
-    title: "Norbert Kułak — Full-stack Developer",
+    title: "Norbert Kułak - Full-stack Developer",
     description:
       "Full-stack developer with 6+ years of commercial experience. React, Next.js, TypeScript, NestJS and GraphQL.",
   },
@@ -38,7 +38,7 @@ export const en: Content = {
     yearsNote: "of commercial work on web applications",
     stats: [
       { value: "5", label: "commercial projects" },
-      { value: "7", label: "personal projects" },
+      { value: "8", label: "personal projects" },
     ],
     competenciesKicker: "What I'm good at",
     competencies: [
@@ -90,7 +90,7 @@ export const en: Content = {
     heading: "Commercial Experience",
     items: [
       {
-        period: "08.2025 — now",
+        period: "08.2025 - now",
         title: "AI roleplay platform",
         employer: "Dev and Deliver",
         role: "Full-stack Developer",
@@ -102,10 +102,19 @@ export const en: Content = {
           "Native app integration: a dedicated interface mode, universal links and sign-in.",
           "Migration to Next.js 16 and Cache Components, and load-time optimisation based on monitoring data.",
         ],
-        tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Apollo Client", "NestJS", "GraphQL", "MongoDB"],
+        tags: [
+          "Next.js",
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "Apollo Client",
+          "NestJS",
+          "GraphQL",
+          "MongoDB",
+        ],
       },
       {
-        period: "03.2026 — now",
+        period: "03.2026 - now",
         title: "Marketplace for booking bartenders",
         employer: "Dev and Deliver",
         role: "Full-stack Developer",
@@ -116,10 +125,18 @@ export const en: Content = {
           "Feature flags switchable per environment without rebuilding the app.",
           "Maintenance: major dependency upgrades and diagnosing CI failures.",
         ],
-        tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "GraphQL", "Sanity", "NestJS"],
+        tags: [
+          "Next.js",
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "GraphQL",
+          "Sanity",
+          "NestJS",
+        ],
       },
       {
-        period: "10.2026 — 11.2026",
+        period: "10.2026 - 11.2026",
         title: "Corporate website for an engineering firm",
         employer: "Dev and Deliver",
         role: "Full-stack Developer",
@@ -130,10 +147,17 @@ export const en: Content = {
           "Implemented the designer's Figma corrections for desktop and mobile.",
           "Deployment to Vercel, including the contact form.",
         ],
-        tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Sanity", "Vercel"],
+        tags: [
+          "Next.js",
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "Sanity",
+          "Vercel",
+        ],
       },
       {
-        period: "11.2021 — 11.2025",
+        period: "11.2021 - 11.2025",
         title: "ESG and compliance platform",
         employer: "Dev and Deliver",
         role: "Frontend Developer",
@@ -145,10 +169,18 @@ export const en: Content = {
           "Multi-factor authentication (MFA) and an interface for AI-assisted answers.",
           "Migrations from Redux to Zustand and Apollo Client, and to react-router v6.",
         ],
-        tags: ["React", "TypeScript", "Vite", "Apollo Client", "GraphQL", "styled-components", "Storybook"],
+        tags: [
+          "React",
+          "TypeScript",
+          "Vite",
+          "Apollo Client",
+          "GraphQL",
+          "styled-components",
+          "Storybook",
+        ],
       },
       {
-        period: "02.2021 — 10.2021",
+        period: "02.2021 - 10.2021",
         title: "Learning platform for children",
         employer: "Dev and Deliver",
         role: "Frontend Developer",
@@ -159,10 +191,18 @@ export const en: Content = {
           "Teacher and school accounts: importing a student list from a CSV file, classes and student editing.",
           "Admin panel: a universal table plus management of users, courses, videos, schools and notifications.",
         ],
-        tags: ["React", "TypeScript", "Apollo Client", "GraphQL", "Redux", "styled-components", "React Hook Form"],
+        tags: [
+          "React",
+          "TypeScript",
+          "Apollo Client",
+          "GraphQL",
+          "Redux",
+          "styled-components",
+          "React Hook Form",
+        ],
       },
       {
-        period: "06.2020 — 01.2021",
+        period: "06.2020 - 01.2021",
         title: "Web applications and blockchain",
         employer: "Nextrope",
         role: "Junior Full-stack Developer",
@@ -208,22 +248,6 @@ export const en: Content = {
         tags: ["Next.js", "TypeScript", "Supabase", "TipTap", "Zustand"],
       },
       {
-        id: "budapp",
-        ...projectMedia["budapp"],
-        title: "BudApp",
-        desc: "An app for site foremen and small construction crews: jobs, quotes sent to the client as a link, photos of the work and crew management.",
-        details: [
-          "A web app designed for a phone on site. The foreman runs jobs and quotes in it, workers see only the jobs assigned to them, and the client accepts a quote through a link, without creating an account.",
-        ],
-        highlights: [
-          "Three roles: the company owner, a worker who joins by invitation and a client with access through a unique link.",
-          "Quote builder with an item library, calculators and a print version.",
-          "Jobs with statuses and photos from before, during and after the work.",
-          "Data isolation between companies based on Row Level Security in Supabase.",
-        ],
-        tags: ["Next.js", "TypeScript", "Supabase", "shadcn/ui", "dnd-kit"],
-      },
-      {
         id: "chess-outplay",
         ...projectMedia["chess-outplay"],
         title: "Chess Outplay",
@@ -256,6 +280,38 @@ export const en: Content = {
           "All communication with the database happens on the server, so keys never reach the browser.",
         ],
         tags: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Web Push"],
+      },
+      {
+        id: "7ab",
+        ...projectMedia["7ab"],
+        title: "7AB",
+        desc: "A corporate website for a business consultancy, with a blog and news. The owner manages the content in a Sanity panel.",
+        details: [
+          "A corporate website with services, case studies, news and blog pages. The content panel is embedded in the same app, and changes appear on the site right after publishing.",
+        ],
+        highlights: [
+          "The whole site in Next.js, with pages generated from CMS content.",
+          "Sanity CMS with the studio in the same app and content refreshed on publish.",
+          "Contact form with e-mail delivery and reCAPTCHA protection.",
+          "Interface animations in Framer Motion.",
+        ],
+        tags: ["Next.js", "TypeScript", "Sanity", "styled-components", "Framer Motion"],
+      },
+      {
+        id: "budapp",
+        ...projectMedia["budapp"],
+        title: "BudApp",
+        desc: "An app for site foremen and small construction crews: jobs, quotes sent to the client as a link, photos of the work and crew management.",
+        details: [
+          "A web app designed for a phone on site. The foreman runs jobs and quotes in it, workers see only the jobs assigned to them, and the client accepts a quote through a link, without creating an account.",
+        ],
+        highlights: [
+          "Three roles: the company owner, a worker who joins by invitation and a client with access through a unique link.",
+          "Quote builder with an item library, calculators and a print version.",
+          "Jobs with statuses and photos from before, during and after the work.",
+          "Data isolation between companies based on Row Level Security in Supabase.",
+        ],
+        tags: ["Next.js", "TypeScript", "Supabase", "shadcn/ui", "dnd-kit"],
       },
       {
         id: "kotor-remix",
@@ -305,7 +361,7 @@ export const en: Content = {
   },
   contact: {
     heading: "Contact",
-    lead: "Looking for a developer for your team, or have a project in mind? Drop me a line — I usually reply within a day or two.",
+    lead: "Looking for a developer for your team, or have a project in mind? Drop me a line - I usually reply within a day or two.",
     note: "I'm happiest talking about projects in the React and Next.js ecosystem, in Polish or English.",
     form: {
       name: "Name",
@@ -313,7 +369,7 @@ export const en: Content = {
       message: "Message",
       send: "Send",
       sending: "Sending…",
-      sent: "Sent — thanks!",
+      sent: "Sent - thanks!",
       namePh: "Jane Smith",
       emailPh: "jane@company.com",
       messagePh: "How can I help?",

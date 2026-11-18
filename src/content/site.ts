@@ -20,7 +20,7 @@ export const site: Site = {
   github: "https://github.com/proxime",
   linkedin: "https://www.linkedin.com/in/norbert-ku%C5%82ak-a5325a1a0/",
   cvPath: "/Norbert-Kulak-CV.pdf",
-  url: "https://norbert-kulak.com",
+  url: "https://norbert-kulak.pl",
 };
 
 export const fullName = `${site.firstName} ${site.lastName}`;

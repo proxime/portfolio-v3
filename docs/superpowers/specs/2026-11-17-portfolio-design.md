@@ -4,7 +4,7 @@ Data: 2026-11-17
 
 ## Cel
 
-Jednostronicowe portfolio Norberta Kułaka (Full-stack Developer) w Next.js, oparte na gotowym designie i na treści z aktualnego CV. Strona zastępuje obecną wersję pod `norbert-kulak.com`.
+Jednostronicowe portfolio Norberta Kułaka (Full-stack Developer) w Next.js, oparte na gotowym designie i na treści z aktualnego CV. Strona zastępuje obecną wersję pod `norbert-kulak.pl`.
 
 ## Źródło designu
 
@@ -70,7 +70,7 @@ Ten dokument opisuje tylko odstępstwa od README i decyzje, których README nie 
 
 - Formularz wysyła wiadomość naprawdę: server action wywołuje API Resend. Konfiguracja przez zmienne środowiskowe `RESEND_API_KEY`, `CONTACT_TO_EMAIL`, `CONTACT_FROM_EMAIL`.
 - Walidacja po stronie serwera (imię, poprawny e-mail, treść), pole-pułapka na boty.
-- Stany: wysyłanie, sukces („Wysłano — dzięki!”), błąd z komunikatem i linkiem do e-maila. Brak konfiguracji daje stan błędu, nigdy udawany sukces.
+- Stany: wysyłanie, sukces („Wysłano - dzięki!”), błąd z komunikatem i linkiem do e-maila. Brak konfiguracji daje stan błędu, nigdy udawany sukces.
 
 ### Stopka
 

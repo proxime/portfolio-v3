@@ -1,5 +1,6 @@
 import {
   ArrowDown,
+  ArrowLeftRight,
   ArrowUpRight,
   Braces,
   Briefcase,
@@ -16,6 +17,7 @@ import {
   Phone,
   Plug,
   Rocket,
+  ShieldCheck,
   Sparkles,
   X,
 } from "lucide-react";
@@ -41,6 +43,9 @@ const lucideIcons = {
   check: Check,
   menu: Menu,
   close: X,
+  // Stand-ins in the tech stack for things that have no logo of their own.
+  arrowLeftRight: ArrowLeftRight,
+  shieldCheck: ShieldCheck,
 } satisfies Record<string, LucideIcon>;
 
 /** Lucide no longer ships brand icons, so these two are drawn here in the same stroke style. */
