@@ -31,7 +31,7 @@ export const pl: Content = {
     heading: "O mnie",
     bio: [
       "Jestem full-stack developerem z ponad sześcioletnim doświadczeniem komercyjnym. Buduję aplikacje webowe w React, Next.js i TypeScript, razem z backendem w Node.js. Pracowałem nad platformą SaaS złożoną z kilkunastu aplikacji, marketplace'em i konsumenckim produktem opartym na AI.",
-      "Poza pracą rozwijam prywatne projekty. Przy kodzie korzystam z narzędzi AI, ale każdą zmianę planuję i przeglądam sam.",
+      "Poza pracą rozwijam prywatne projekty. Lubię doprowadzać je do działającej wersji, a nie zostawiać w szufladzie.",
     ],
     years: "6",
     yearsLabel: "lat doświadczenia",
@@ -43,34 +43,34 @@ export const pl: Content = {
     competenciesKicker: "W czym jestem dobry",
     competencies: [
       {
-        id: "react",
+        id: "fullstack",
+        icon: "braces",
+        title: "Dowożę funkcje w całości",
+        desc: "Biorę zadanie od projektu ekranu do działającej wersji na produkcji: interfejs, logika po stronie serwera i dane. Nie trzeba go dzielić między kilka osób.",
+      },
+      {
+        id: "codebase",
         icon: "layers",
-        title: "Interfejsy w React i Next.js",
-        desc: "Od pojedynczych widoków po platformę złożoną z kilkunastu aplikacji.",
+        title: "Odnajduję się w dużym kodzie",
+        desc: "Przez cztery lata rozwijałem platformę złożoną z kilkunastu aplikacji, nad którą pracowało wielu developerów. Umiem wejść w istniejący kod i zmienić go tak, żeby nie zepsuć niczego obok.",
+      },
+      {
+        id: "solo",
+        icon: "briefcase",
+        title: "Pracuję samodzielnie",
+        desc: "W dwóch projektach byłem jedynym developerem frontendu. Sam planowałem pracę, wydawałem kolejne wersje i odpowiadałem za to, że działają.",
       },
       {
         id: "ai",
         icon: "sparkles",
-        title: "Funkcje oparte na AI",
-        desc: "Czat ze streamingiem odpowiedzi, synteza mowy, kreator treści oparty na LLM, generowanie obrazów.",
+        title: "Buduję funkcje oparte na AI",
+        desc: "Współtworzyłem produkt, w którym użytkownicy rozmawiają z postaciami AI: odpowiedzi pojawiają się na bieżąco, postacie mówią głosem, a treści powstają z pomocą modelu. Wiem, co trzeba dopracować, zanim odpowiedź modelu trafi do człowieka.",
       },
       {
-        id: "fullstack",
-        icon: "braces",
-        title: "Full-stack",
-        desc: "Dowożę funkcję w całości: interfejs, API w Node.js i NestJS, baza danych.",
-      },
-      {
-        id: "integrations",
-        icon: "plug",
-        title: "Integracje",
-        desc: "Płatności Stripe, CMS Sanity, logowanie przez Google i Apple, Supabase i Firebase.",
-      },
-      {
-        id: "projects",
+        id: "shipping",
         icon: "rocket",
-        title: "Prywatne projekty",
-        desc: "Po godzinach projektuję, buduję i wdrażam własne aplikacje, od pomysłu po działającą wersję.",
+        title: "Kończę to, co zaczynam",
+        desc: "Prywatne projekty doprowadzam do wdrożenia, a nie do folderu z pomysłami. Większość z nich możesz otworzyć i przeklikać niżej na tej stronie.",
       },
     ],
   },
@@ -94,7 +94,7 @@ export const pl: Content = {
         title: "Platforma AI roleplay",
         employer: "Dev and Deliver",
         role: "Full-stack Developer",
-        desc: "Konsumencka platforma do rozmów z postaciami AI i interaktywnych przygód, dostępna w przeglądarce i jako aplikacja mobilna. Jestem jednym z głównych developerów frontendu, a od 2026 roku dostarczam też backend własnych funkcji.",
+        desc: "Konsumencka platforma do rozmów z postaciami AI i interaktywnych przygód, dostępna w przeglądarce i jako aplikacja mobilna. Pracuję nad frontendem, a od 2026 roku także nad backendem własnych funkcji.",
         points: [
           "Czat z postaciami AI: streaming odpowiedzi, synteza mowy, historia rozmów i widok mobilny.",
           "Moduł interaktywnych przygód od frontendu po backend: formularze, czat, wersjonowanie i kreator wspomagany przez LLM.",
@@ -118,7 +118,7 @@ export const pl: Content = {
         title: "Marketplace do rezerwacji barmanów",
         employer: "Dev and Deliver",
         role: "Full-stack Developer",
-        desc: "Dwustronny marketplace na rynek duński, w którym klienci rezerwują barmanów-freelancerów na prywatne wydarzenia. Jestem jedynym developerem frontendu aplikacji i odpowiadam za jej wydania.",
+        desc: "Dwustronny marketplace na rynek duński, w którym klienci rezerwują barmanów-freelancerów na prywatne wydarzenia. Odpowiadam za frontend aplikacji i jej wydania.",
         points: [
           "Wdrożenie Sanity CMS od zera: studio, schematy z lokalizacją, nowy landing, blog i przepisy, podgląd wersji roboczych.",
           "System opinii i ocen od frontendu po backend: formularz po wydarzeniu, moderacja w panelu admina i opinie na profilach.",
@@ -143,7 +143,7 @@ export const pl: Content = {
         desc: "Niemieckojęzyczna strona firmowa szwajcarskiego biura inżynierskiego, której treścią zarządza nietechniczny redaktor.",
         points: [
           "Integracja Sanity CMS: schematy treści, typowane zapytania i warstwa mapowania pokryta testami.",
-          "Rewalidacja na żądanie: zmiana opublikowana w CMS jest widoczna po kilku sekundach, bez przebudowy strony.",
+          "Rewalidacja na żądanie wyzwalana webhookiem z CMS, bez przebudowy całej strony.",
           "Wdrożenie poprawek projektanta z Figmy na desktop i mobile.",
           "Wdrożenie na Vercel razem z formularzem kontaktowym.",
         ],
@@ -161,10 +161,10 @@ export const pl: Content = {
         title: "Platforma ESG i compliance",
         employer: "Dev and Deliver",
         role: "Frontend Developer",
-        desc: "Wielodostępna platforma SaaS do zgłaszania nieprawidłowości, oświadczeń, ankiet oraz raportowania i metryk ESG, zbudowana z 15 aplikacji React nad wspólnym backendem GraphQL. Należałem do trzech najaktywniejszych developerów frontendu.",
+        desc: "Wielodostępna platforma SaaS do zgłaszania nieprawidłowości, oświadczeń, ankiet oraz raportowania i metryk ESG, zbudowana z 15 mikrofrontendów w React nad wspólnym backendem GraphQL.",
         points: [
           "Założenie pięciu nowych aplikacji na platformie i podłączenie ich do wspólnej infrastruktury.",
-          "Główny wkład we frontend modułów metryk ESG, zaangażowania, oświadczeń i ankiet.",
+          "Frontend modułów metryk ESG, zaangażowania, oświadczeń i ankiet.",
           "Kwestionariusze i dashboardy ESG, wprowadzanie danych w arkuszu oraz import plików xlsx.",
           "Logowanie wieloskładnikowe (MFA) oraz interfejs odpowiedzi wspomaganych przez AI.",
           "Migracje z Reduxa na Zustand i Apollo Client oraz na react-router v6.",
@@ -184,7 +184,7 @@ export const pl: Content = {
         title: "Platforma edukacyjna dla dzieci",
         employer: "Dev and Deliver",
         role: "Frontend Developer",
-        desc: "Platforma do nauki online dla dzieci: kursy wideo z zadaniami, zajęcia na żywo, konta rodziców i uczniów oraz subskrypcje. Byłem głównym developerem panelu administracyjnego i jednym z dwóch głównych developerów aplikacji dla użytkowników.",
+        desc: "Platforma do nauki online dla dzieci: kursy wideo z zadaniami, zajęcia na żywo, konta rodziców i uczniów oraz subskrypcje. Pracowałem nad aplikacją dla użytkowników i panelem administracyjnym.",
         points: [
           "Aplikacja dla uczniów i rodziców: strony kursów z postępem, przesyłanie prac domowych, zajęcia na żywo i widoki mobilne.",
           "Rejestracja, onboarding oraz widoki wyboru planu i procesu płatności z okresem próbnym.",
@@ -234,18 +234,19 @@ export const pl: Content = {
         id: "nasze-dania",
         ...projectMedia["nasze-dania"],
         title: "Nasze Dania",
-        desc: "Społecznościowy serwis z przepisami: konta użytkowników, trzystopniowy formularz dodawania przepisu z edytorem tekstu, polubienia, profile i panel moderatora.",
+        desc: "Społecznościowy serwis z przepisami: konta użytkowników, kreator przepisu z edytorem tekstu, komentarze, polubienia, obserwowanie autorów i panel moderatora.",
         details: [
-          "Serwis, w którym każdy może dodawać własne przepisy i odkrywać cudze. Rozwijam go od 2023 roku jako projekt prywatny i pełny produkt: od bazy danych i autoryzacji po moderację treści.",
+          "Serwis, w którym każdy może dodawać własne przepisy i odkrywać cudze. Rozwijam go od 2023 roku jako projekt prywatny i pełny produkt. W listopadzie 2026 przeszedł pełny redesign z własnym systemem komponentów.",
         ],
         highlights: [
           "Rejestracja i logowanie, także przez Google, z konfiguracją profilu po założeniu konta.",
           "Trzystopniowy kreator przepisu z edytorem TipTap oraz kadrowaniem i kompresją zdjęć.",
-          "Lista przepisów z kategoriami i nieskończonym przewijaniem, polubienia i profile autorów.",
-          "Panel moderatora ze zgłoszonymi przepisami oraz przepisy prywatne, widoczne tylko dla autora.",
-          "Supabase: baza Postgres, autoryzacja i przechowywanie plików.",
+          "Strona przepisu z wartościami odżywczymi, komentarzami, polubieniami i zgłaszaniem treści.",
+          "Profile autorów z obserwowaniem i powiadomieniami oraz lista przepisów z kategoriami i filtrami.",
+          "Panel moderatora: zgłoszone przepisy i konfiguracja strony głównej.",
+          "Supabase: baza Postgres, autoryzacja, przechowywanie plików i funkcje brzegowe z limitami żądań.",
         ],
-        tags: ["Next.js", "TypeScript", "Supabase", "TipTap", "Zustand"],
+        tags: ["Next.js", "TypeScript", "Supabase", "Tailwind CSS", "TipTap"],
       },
       {
         id: "chess-outplay",
@@ -287,11 +288,11 @@ export const pl: Content = {
         title: "7AB",
         desc: "Strona firmowa doradztwa biznesowego z blogiem i aktualnościami. Treścią zarządza właściciel w panelu Sanity.",
         details: [
-          "Strona firmowa z podstronami usług, realizacji, aktualności i bloga. Panel do zarządzania treścią jest osadzony w tej samej aplikacji, a zmiany pojawiają się na stronie zaraz po publikacji.",
+          "Strona firmowa z podstronami usług, realizacji, aktualności i bloga. Panel do zarządzania treścią jest osadzony w tej samej aplikacji.",
         ],
         highlights: [
           "Cała strona w Next.js, z podstronami generowanymi z treści w CMS.",
-          "Sanity CMS ze studiem w tej samej aplikacji i odświeżaniem treści po publikacji.",
+          "Sanity CMS ze studiem osadzonym w aplikacji i rewalidacją treści przez webhook.",
           "Formularz kontaktowy z wysyłką e-mail i ochroną reCAPTCHA.",
           "Animacje interfejsu w Framer Motion.",
         ],
@@ -361,8 +362,7 @@ export const pl: Content = {
   },
   contact: {
     heading: "Kontakt",
-    lead: "Szukasz developera do zespołu albo masz konkretny projekt? Napisz - zwykle odpowiadam w ciągu dnia lub dwóch.",
-    note: "Najchętniej rozmawiam o projektach w ekosystemie React i Next.js, po polsku lub po angielsku.",
+    lead: "Szukasz developera do zespołu albo masz projekt do zrobienia? Napisz lub zadzwoń.",
     form: {
       name: "Imię i nazwisko",
       email: "E-mail",
@@ -391,9 +391,5 @@ export const pl: Content = {
       errorSend: "Nie udało się wysłać wiadomości.",
       errorFallback: "Napisz bezpośrednio na",
     },
-  },
-  footer: {
-    tagline: "Zbudowane w Next.js i Tailwind CSS.",
-    rights: "Wszelkie prawa zastrzeżone.",
   },
 };

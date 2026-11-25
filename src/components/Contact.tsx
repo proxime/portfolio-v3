@@ -33,7 +33,6 @@ export function Contact({ contact }: { contact: Content["contact"] }) {
             </a>
           </div>
           <SocialLinks />
-          <p className="max-w-sm text-sm leading-relaxed text-zinc-500">{contact.note}</p>
         </div>
 
         <ContactForm copy={contact.form} email={site.email} />

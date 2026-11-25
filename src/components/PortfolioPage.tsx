@@ -25,7 +25,7 @@ export function PortfolioPage({ lang }: { lang: Lang }) {
         <Projects projects={t.projects} />
         <Contact contact={t.contact} />
       </main>
-      <Footer footer={t.footer} nav={t.nav} />
+      <Footer nav={t.nav} />
     </>
   );
 }

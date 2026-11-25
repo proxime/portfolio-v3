@@ -31,7 +31,7 @@ export const en: Content = {
     heading: "About me",
     bio: [
       "I'm a full-stack developer with over six years of commercial experience. I build web applications in React, Next.js and TypeScript, together with the backend in Node.js. I've worked on a SaaS platform made of more than a dozen apps, a marketplace and a consumer AI product.",
-      "Outside work I develop personal projects. I use AI coding tools, but I plan and review every change myself.",
+      "Outside work I develop personal projects. I like to take them all the way to a working version instead of leaving them half-finished.",
     ],
     years: "6",
     yearsLabel: "years of experience",
@@ -43,34 +43,34 @@ export const en: Content = {
     competenciesKicker: "What I'm good at",
     competencies: [
       {
-        id: "react",
+        id: "fullstack",
+        icon: "braces",
+        title: "I deliver features end to end",
+        desc: "I take a task from the screen design to a working version in production: interface, server-side logic and data. It does not have to be split between several people.",
+      },
+      {
+        id: "codebase",
         icon: "layers",
-        title: "React and Next.js interfaces",
-        desc: "From single views to a platform made of more than a dozen apps.",
+        title: "I find my way in large codebases",
+        desc: "For four years I worked on a platform made of more than a dozen apps, built by many developers. I can step into existing code and change it without breaking what is next to it.",
+      },
+      {
+        id: "solo",
+        icon: "briefcase",
+        title: "I work independently",
+        desc: "On two projects I was the only frontend developer. I planned the work myself, shipped the releases and was responsible for them working.",
       },
       {
         id: "ai",
         icon: "sparkles",
-        title: "AI-powered features",
-        desc: "Chat with streamed responses, text-to-speech, an LLM-based content creator, image generation.",
+        title: "I build AI-powered features",
+        desc: "I helped build a product where users talk to AI characters: answers appear as they are generated, characters speak aloud and content is created with a model's help. I know what has to be polished before a model's answer reaches a person.",
       },
       {
-        id: "fullstack",
-        icon: "braces",
-        title: "Full-stack",
-        desc: "I deliver a feature end to end: interface, API in Node.js and NestJS, database.",
-      },
-      {
-        id: "integrations",
-        icon: "plug",
-        title: "Integrations",
-        desc: "Stripe payments, Sanity CMS, Google and Apple sign-in, Supabase and Firebase.",
-      },
-      {
-        id: "projects",
+        id: "shipping",
         icon: "rocket",
-        title: "Personal projects",
-        desc: "Outside work I design, build and ship my own apps, from the idea to a working version.",
+        title: "I finish what I start",
+        desc: "I take my personal projects all the way to a deployment, not to a folder of ideas. You can open and click through most of them further down this page.",
       },
     ],
   },
@@ -94,7 +94,7 @@ export const en: Content = {
         title: "AI roleplay platform",
         employer: "Dev and Deliver",
         role: "Full-stack Developer",
-        desc: "A consumer platform for chatting with AI characters and playing interactive adventures, available on the web and as a mobile app. I'm one of the main frontend developers, and since 2026 I also deliver the backend for my own features.",
+        desc: "A consumer platform for chatting with AI characters and playing interactive adventures, available on the web and as a mobile app. I work on the frontend, and since 2026 also on the backend of my own features.",
         points: [
           "AI character chat: streamed responses, text-to-speech, conversation history and a mobile view.",
           "Interactive adventures module from frontend to backend: forms, chat, versioning and an LLM-assisted creator.",
@@ -118,7 +118,7 @@ export const en: Content = {
         title: "Marketplace for booking bartenders",
         employer: "Dev and Deliver",
         role: "Full-stack Developer",
-        desc: "A two-sided marketplace for the Danish market where customers book freelance bartenders for private events. I'm the only frontend developer of the app and I own its releases.",
+        desc: "A two-sided marketplace for the Danish market where customers book freelance bartenders for private events. I'm responsible for the app's frontend and its releases.",
         points: [
           "Introduced Sanity CMS from scratch: studio, localised schemas, a new landing page, blog and recipes, draft previews.",
           "Reviews and ratings system from frontend to backend: post-event form, moderation in the admin panel and reviews on profiles.",
@@ -143,7 +143,7 @@ export const en: Content = {
         desc: "A German-language corporate website for a Swiss engineering firm, with content managed by a non-technical editor.",
         points: [
           "Sanity CMS integration: content schemas, typed queries and a mapping layer covered by tests.",
-          "On-demand revalidation: a change published in the CMS is live within seconds, without rebuilding the site.",
+          "On-demand revalidation triggered by a CMS webhook, with no full rebuild of the site.",
           "Implemented the designer's Figma corrections for desktop and mobile.",
           "Deployment to Vercel, including the contact form.",
         ],
@@ -161,10 +161,10 @@ export const en: Content = {
         title: "ESG and compliance platform",
         employer: "Dev and Deliver",
         role: "Frontend Developer",
-        desc: "A multi-tenant SaaS platform for whistleblowing, disclosures, surveys, and ESG reporting and metrics, built from 15 React apps on a shared GraphQL backend. I was one of the three most active frontend developers.",
+        desc: "A multi-tenant SaaS platform for whistleblowing, disclosures, surveys, and ESG reporting and metrics, built from 15 React micro-frontends on a shared GraphQL backend.",
         points: [
           "Bootstrapped five new apps on the platform and wired them into the shared infrastructure.",
-          "Main frontend contributor to the ESG metrics, engagement, disclosures and surveys modules.",
+          "Frontend of the ESG metrics, engagement, disclosures and surveys modules.",
           "ESG questionnaires and dashboards, spreadsheet data entry and xlsx import.",
           "Multi-factor authentication (MFA) and an interface for AI-assisted answers.",
           "Migrations from Redux to Zustand and Apollo Client, and to react-router v6.",
@@ -184,7 +184,7 @@ export const en: Content = {
         title: "Learning platform for children",
         employer: "Dev and Deliver",
         role: "Frontend Developer",
-        desc: "An online learning platform for children: video courses with activities, live sessions, parent and student accounts, and subscriptions. I was the main developer of the admin panel and one of the two main developers of the app for users.",
+        desc: "An online learning platform for children: video courses with activities, live sessions, parent and student accounts, and subscriptions. I worked on the app for users and the admin panel.",
         points: [
           "App for students and parents: course pages with progress, homework uploads, live sessions and mobile views.",
           "Sign-up, onboarding, and the plan selection and payment flow views with a free trial.",
@@ -234,18 +234,19 @@ export const en: Content = {
         id: "nasze-dania",
         ...projectMedia["nasze-dania"],
         title: "Nasze Dania",
-        desc: "A community recipe site: user accounts, a three-step recipe form with a rich-text editor, likes, profiles and a moderator panel.",
+        desc: "A community recipe site: user accounts, a recipe wizard with a rich-text editor, comments, likes, following authors and a moderator panel.",
         details: [
-          "A site where anyone can add their own recipes and discover recipes from others. I have been building it since 2023 as a personal project and a complete product: from the database and authentication to content moderation.",
+          "A site where anyone can add their own recipes and discover recipes from others. I have been building it since 2023 as a personal project and a complete product. In November 2026 it went through a full redesign with its own component system.",
         ],
         highlights: [
           "Sign-up and sign-in, including Google, with profile setup after registration.",
           "A three-step recipe wizard with the TipTap editor plus image cropping and compression.",
-          "Recipe list with categories and infinite scroll, likes and author profiles.",
-          "A moderator panel for reported recipes, and private recipes visible only to their author.",
-          "Supabase: Postgres database, authentication and file storage.",
+          "Recipe page with nutrition values, comments, likes and content reporting.",
+          "Author profiles with following and notifications, and a recipe list with categories and filters.",
+          "Moderator panel: reported recipes and home page configuration.",
+          "Supabase: Postgres database, authentication, file storage and edge functions with rate limits.",
         ],
-        tags: ["Next.js", "TypeScript", "Supabase", "TipTap", "Zustand"],
+        tags: ["Next.js", "TypeScript", "Supabase", "Tailwind CSS", "TipTap"],
       },
       {
         id: "chess-outplay",
@@ -287,11 +288,11 @@ export const en: Content = {
         title: "7AB",
         desc: "A corporate website for a business consultancy, with a blog and news. The owner manages the content in a Sanity panel.",
         details: [
-          "A corporate website with services, case studies, news and blog pages. The content panel is embedded in the same app, and changes appear on the site right after publishing.",
+          "A corporate website with services, case studies, news and blog pages. The content panel is embedded in the same app.",
         ],
         highlights: [
           "The whole site in Next.js, with pages generated from CMS content.",
-          "Sanity CMS with the studio in the same app and content refreshed on publish.",
+          "Sanity CMS with the studio embedded in the app and webhook-driven content revalidation.",
           "Contact form with e-mail delivery and reCAPTCHA protection.",
           "Interface animations in Framer Motion.",
         ],
@@ -361,8 +362,7 @@ export const en: Content = {
   },
   contact: {
     heading: "Contact",
-    lead: "Looking for a developer for your team, or have a project in mind? Drop me a line - I usually reply within a day or two.",
-    note: "I'm happiest talking about projects in the React and Next.js ecosystem, in Polish or English.",
+    lead: "Looking for a developer for your team, or have a project that needs building? Write or call.",
     form: {
       name: "Name",
       email: "Email",
@@ -391,9 +391,5 @@ export const en: Content = {
       errorSend: "The message could not be sent.",
       errorFallback: "Write to me directly at",
     },
-  },
-  footer: {
-    tagline: "Built with Next.js and Tailwind CSS.",
-    rights: "All rights reserved.",
   },
 };

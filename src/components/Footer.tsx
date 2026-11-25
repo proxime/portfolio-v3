@@ -1,6 +1,6 @@
 import { cacheLife } from "next/cache";
 import { fullName, site } from "@/content/site";
-import type { Content, NavCopy } from "@/content/types";
+import type { NavCopy } from "@/content/types";
 import { SocialLinks } from "./SocialLinks";
 
 /** Reading the clock is not allowed in a prerendered shell, so the year is a cached value refreshed daily. */
@@ -10,13 +10,7 @@ async function CurrentYear() {
   return new Date().getFullYear();
 }
 
-export function Footer({
-  footer,
-  nav,
-}: {
-  footer: Content["footer"];
-  nav: NavCopy;
-}) {
+export function Footer({ nav }: { nav: NavCopy }) {
   const links = [
     ["about", nav.about],
     ["experience", nav.experience],
@@ -50,12 +44,9 @@ export function Footer({
         </nav>
         <SocialLinks size="sm" />
       </div>
-      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-6 pb-8 text-xs text-zinc-500 sm:flex-row">
-        <span>{footer.tagline}</span>
-        <span>
-          © <CurrentYear /> {fullName}. {footer.rights}
-        </span>
-      </div>
+      <p className="mx-auto max-w-6xl px-6 pb-8 text-center text-xs text-zinc-500">
+        © <CurrentYear /> {fullName}
+      </p>
     </footer>
   );
 }

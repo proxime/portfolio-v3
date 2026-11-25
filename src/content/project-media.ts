@@ -17,11 +17,11 @@ export const projectMedia = {
   "nasze-dania": {
     status: "live",
     images: [
-      "/projects/nasze-dania.jpg",
-      "/projects/nasze-dania-przepisy.jpg",
-      "/projects/nasze-dania-przepis.jpg",
+      "/projects/nasze-dania-v2.jpg",
+      "/projects/nasze-dania-v2-przepisy.jpg",
+      "/projects/nasze-dania-v2-przepis.jpg",
     ],
-    demoUrl: "https://zarcienagrubo.vercel.app",
+    demoUrl: "https://naszedania.pl",
   },
   "chess-outplay": {
     status: "live",

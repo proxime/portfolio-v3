@@ -134,8 +134,6 @@ export type Content = {
   contact: {
     heading: string;
     lead: string;
-    note: string;
     form: ContactFormCopy;
   };
-  footer: { tagline: string; rights: string };
 };
